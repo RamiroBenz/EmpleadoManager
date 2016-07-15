@@ -22,7 +22,8 @@ public class DBInMemory {
     
     
     public void almacenar(Empleado empleado) {
-        //Validacion..
+        
+        //Validacion
         if(empleado==null){
             throw new IllegalArgumentException("El Empleado no es null");
             
@@ -41,8 +42,7 @@ public class DBInMemory {
     }
 
     public Empleado buscarEmpleado(Long id) {
-        return null;
-        
+        return datos.get(id);   
     }
 
   
