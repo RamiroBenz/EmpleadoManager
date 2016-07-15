@@ -1,0 +1,6 @@
+lenguaje: java
+jdk:
+  -oraclejdk8
+notifications:
+  email:
+  -ramiro.benzacar@hotmail.com
