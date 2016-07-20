@@ -13,14 +13,12 @@ import java.util.Map;
  *
  * @author ITMaster
  */
-public class DBInMemory {
+public class DBInMemory implements DAO {
     private Long lastId=0L;
     
     private  Map<Long, Empleado> datos=new HashMap<>();
-    
-    
-    
-    
+
+    @Override
     public void almacenar(Empleado empleado) {
         
         //Validacion
@@ -41,6 +39,7 @@ public class DBInMemory {
         
     }
 
+    @Override
     public Empleado buscarEmpleado(Long id) {
         return datos.get(id);   
     }

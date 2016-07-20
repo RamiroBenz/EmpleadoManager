@@ -12,8 +12,11 @@ import java.util.Objects;
  */
 public class Empleado {
     private Long id;
-    private String Nombre;
-
+    private String nombre;
+    private Integer edad;
+    private double sueldo;
+    private String dni;
+    
     @Override
     public int hashCode() {
         int hash = 3;
@@ -38,9 +41,7 @@ public class Empleado {
         }
         return true;
     }
-    private Integer Edad;
-    private double Sueldo;
-    private String dni;
+    
 
     public Empleado() {
     }
@@ -54,27 +55,27 @@ public class Empleado {
     }
 
     public String getNombre() {
-        return Nombre;
+        return nombre;
     }
 
     public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+        this.nombre = Nombre;
     }
 
     public Integer getEdad() {
-        return Edad;
+        return edad;
     }
 
     public void setEdad(Integer Edad) {
-        this.Edad = Edad;
+        this.edad = Edad;
     }
 
     public double getSueldo() {
-        return Sueldo;
+        return sueldo;
     }
 
     public void setSueldo(double Sueldo) {
-        this.Sueldo = Sueldo;
+        this.sueldo = Sueldo;
     }
 
     public String getDni() {
